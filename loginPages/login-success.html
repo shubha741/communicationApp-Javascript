@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Communication Application</title>
+    <script>
+        let code = localStorage.getItem("currentUser")
+        if (code == "login") {
+
+        }
+        else {
+
+            window.location.href = "../login.html"
+        }
+    </script>
+    <link rel="stylesheet" href="../Assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../Assets/css/main.css">
+    <link rel="stylesheet" href="../Assets/css/loginPage.css">
+    <link rel="stylesheet" href="../Assets/css/mainPage.css">
+
+</head>
+
+<body onload="displayUserName()">
+
+    <div class="container-fluid loginSucceFull text-center">
+        <section>
+            <ul class="nav nav-tabs navBar">
+                <li class="nav-item">
+                    <a class="nav-link " href="../mainPages/chats.html">Group Chat</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../mainPages/user-list.html">Manage users</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../mainPages/upload-list.html">Manage Documents</a>
+                </li>
+                <li class="nav-item" onclick="logOut()">
+                    <a class="nav-link" onclick="logOut()">Logout</a>
+                </li>
+            </ul>
+        </section>
+        <section class="mt-4">
+            <h5>
+                Login Successful</h4>
+                <div class="mt-4">
+                    <p id="displayLoginEmail"> </p>
+                </div>
+        </section>
+    </div>
+    <script src="../Assets/js/jquery.min.js "></script>
+    <script src="../Assets/js/bootstrap.min.js "></script>
+    <script src="../Assets/js/popper.min.js"></script>
+    <script src="../Assets/js/custom.js"></script>
+
+</body>
+
+</html>

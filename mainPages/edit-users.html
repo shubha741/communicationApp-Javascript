@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Communication Application</title>
+    <link rel="stylesheet" href="../Assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../Assets/css/mainPage.css">
+    <link rel="stylesheet" href="../Assets/css/main.css">
+    <link rel="stylesheet" href="../Assets/css/loginPage.css">
+    <script>
+        let code = localStorage.getItem("currentUser")
+        if (code == "login") {
+
+        }
+        else {
+
+            window.location.href = "../login.html"
+        }
+    </script>
+</head>
+
+<body onload="editFunction()" action="./user-list.html">
+
+    <div class="container-fluid formPage editUserPage">
+        <section>
+            <ul class="nav nav-tabs navBar text-center">
+                <li class="nav-item ">
+                    <a class="nav-link " href="../mainPages/chats.html" aria-current="page">Group Chat</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="../mainPages/user-list.html">Manage users</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../mainPages/upload-list.html">Manage Documents</a>
+                </li>
+                <li class="nav-item" onclick="logOut()">
+                    <a class="nav-link" onclick="logOut()">Logout</a>
+                </li>
+            </ul>
+        </section>
+        <section class="pt-5">
+            <div class="registerHeader ">
+                Edit User Information
+            </div>
+            <form>
+                <div class="row  mt-5 ">
+                    <label for="inputEmail3 " class="col col-sm-5 col-form-label ">Full Name</label>
+                    <div class=" col  col-sm-3 ">
+                        <input type="text" class="form-control " id="editUserName">
+                    </div>
+                </div>
+
+                <div class="row mt-4  ">
+                    <label for="inputPassword3 " class="col-sm-5 col-form-label ">Email</label>
+                    <div class="col  col-sm-3 ">
+                        <input type="text" class="form-control " id="editUserEmail">
+                    </div>
+                </div>
+                <div class="row mt-5 ">
+                    <div class="col  col-sm-7">
+                        <div class="btn  light_blueBtn" id="editBtn" type="submit" onclick="saveEditedUser()">
+                         Save
+                         
+                            <!-- <a
+                                href="user-list.html">Save</a> -->
+                            </div>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </div>
+    <script src="../Assets/js/jquery.min.js "></script>
+    <script src="../Assets/js/bootstrap.min.js "></script>
+    <script src="../Assets/js/popper.min.js"></script>
+    <script src="../Assets/js/custom.js"></script>
+
+</body>
+
+</html>

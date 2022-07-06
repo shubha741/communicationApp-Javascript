@@ -1,0 +1,416 @@
+.navBar .nav-item {
+    line-height: 19px;
+    width: 25%;
+    border-right: 2px solid rgb(0, 0, 0);
+}
+
+.navBar .nav-item .active {
+    background: red;
+}
+
+.navBar .nav-item:last-child {
+    border-radius: 0px 5px 5px 0px;
+    border-right: none;
+}
+
+.navBar .active {
+    background-color: rgb(255, 255, 255);
+    border-right: 2px solid rgb(0, 0, 0);
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.navBar .active+.nav-item {
+    border-left: none;
+}
+
+.nav-tabs .nav-item a:hover {
+    color: rgb(0, 0, 0);
+}
+
+.nav-tabs {
+    border-radius: 5px;
+    border: 2px solid rgb(0, 0, 0);
+    background-color: rgb(191, 191, 191);
+}
+
+.navBar .active a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.navBar a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.nav-tabs .nav-link {
+    margin-bottom: 0px;
+    border: none;
+}
+
+.chatFooter .whiteBtn {
+    font-weight: 700;
+    border: 2px solid rgb(0, 0, 0);
+    vertical-align: top;
+    padding: 3px 10px;
+    border-radius: 9px;
+}
+
+.chatFooter {
+    border: 2px solid rgb(0, 0, 0);
+    padding: 5px;
+    border-radius: 2px 2px 5px 5px;
+}
+
+.chatFooter .col-md-2:first-child {
+    text-align: end;
+    font-weight: 700;
+}
+
+.chatFooter .col-md-2 .grpBtn {
+    font-weight: 700;
+}
+
+.chatPage.container-fluid {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.chatFooter input[type="text"] {
+    padding-left: 10px;
+    width: 100%;
+    border: 2px solid rgb(0, 0, 0);
+    height: 35px;
+    border-radius: 6px;
+}
+
+.chatPage ul {
+    list-style: none;
+}
+
+.chatPage section:nth-child(2) {
+    border-radius: 5px 5px 0px 0px;
+    border: 2px solid rgb(0, 0, 0);
+    padding: 5px 0px 6px;
+}
+
+.chatCloseBtn {
+    top: 72px;
+    position: absolute;
+    right: 9px;
+    text-align: end;
+}
+
+.chatBody {
+    height: 50vh;
+overflow-y: scroll;}
+
+.chatBody table tr td:first-child {
+    padding-right: 10px;
+}
+
+.tableDesign table th {
+    background-color: rgb(191, 191, 191);
+    border-top: 2px solid rgb(0, 0, 0);
+    border-left: 2px solid rgb(0, 0, 0);
+    border-right: 2px solid rgb(0, 0, 0);
+}
+
+.tableDesign tr td {
+    border-left: 2px solid rgb(0, 0, 0);
+}
+
+.tableDesign tr td {
+    border-right: 2px solid rgb(0, 0, 0);
+}
+
+.table> :not(:last-child)> :last-child>* {
+    font-weight: normal;
+    width: 33%;
+}
+
+.tableDesign tr th {
+    border-bottom: 0px;
+}
+
+.tableDesign tr:last-child td {
+    border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+.tableDesign tr th:first-child {
+    text-align: left;
+}
+
+.tableDesign tr td:first-child {
+    color: rgb(0, 0, 0);
+    text-align: left;
+}
+
+.tableDesign table td a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.tableDesign tr th last-child {}
+
+.btn-close {
+    border: 2px solid rgb(0, 0, 0);
+    padding: 3px;
+}
+
+.modal-body {
+    font-weight: bold;
+    border-left: 2px solid rgb(0, 0, 0);
+    border-right: 2px solid rgb(0, 0, 0);
+}
+
+.modal-header {
+    padding: 5px 10px;
+    text-align: center;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 4px 4px 0px 0px;
+}
+
+.modal-footer {
+    justify-content: center;
+    border-left: 2px solid rgb(0, 0, 0);
+    border-right: 2px solid rgb(0, 0, 0);
+    border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+.modal-content {
+    border-radius: 15px 13px 14px 18px;
+}
+
+.deleteBox .modal-body {
+    display: flex;
+    padding-top: 40px;
+    align-content: flex-end;
+    align-items: center;
+}
+
+.deleteBox .modal-body img {
+    margin-right: 30px;
+}
+
+.deleteBox {
+    max-width: 300px;
+}
+
+.chatBody .chatTime {
+    text-align: end;
+}
+
+.chatBody .chatMessage {
+    text-align: start;
+}
+
+tbody tr td a::after {
+    content: " | ";
+}
+
+tbody tr td a:last-child::after {
+    content: "";
+}
+
+.upload-list table:nth-child(1) td:nth-child(1) {
+    text-align: left;
+}
+
+.upload-list table:nth-child(1) th:nth-child(1) {
+    text-align: left;
+}
+
+::file-selector-button {
+    color: rgb(0, 0, 0);
+    background-color: rgb(179, 179, 179);
+    padding: 5px 25px 6px 24px;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    margin-right: 54px;
+}
+
+.upload-list .modal {
+    top: 100px;
+}
+
+.uploadModal .modal-body {
+    padding: 40px 40px 0px;
+}
+
+.uploadModal .modal-body input[type="text"] {
+    padding-left: 5px;
+    width: 475px;
+    height: 40px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 6px;
+}
+
+.uploadModal .modal-header h5 {
+    margin: auto 0px auto auto;
+}
+
+.uploadModal .modal-body input[type="file"]::after {
+    padding-right: 30px;
+}
+
+.bigModal .modal-dialog {
+    max-width: 714px;
+}
+
+.bigModal .modal-dialog .modal-footer {
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.editModal .modal-header {
+    text-align: center;
+}
+
+.editModal .modal-header h6 {
+    text-align: center;
+    margin: auto 30px auto auto;
+}
+
+.editModal .modal-footer {
+    padding-bottom: 60px;
+}
+
+.editModal .modal-header .btn-close {
+    padding: 3px;
+}
+
+.editModal .modal-body input[type="text"] {
+    width: 307px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 4px;
+    padding-left: 12px;
+}
+
+.lgrBtn {
+    width: 120px;
+    padding: 5px 10px !important;
+}
+
+.addShare .greayBtn {
+    font-weight: normal;
+}
+
+.greayBtn {
+    font-weight: 700;
+    background-color: rgb(179, 179, 179);
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    padding: 3px 23px;
+    margin-right: 37px;
+}
+
+.editModal .modal-dialog {
+    max-width: 500px;
+}
+
+.share section p {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.share section span {
+    font-weight: 470;
+}
+
+.addShare {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+.addShare {
+    margin: 1px;
+    border: 2px solid rgb(0, 0, 0);
+    padding: 20px 0px;
+    border-radius: 5px;
+}
+
+.addShare label {
+    font-weight: 500;
+    margin-left: 20px;
+}
+
+.addShare select {
+    width: 300px;
+    margin-left: 15px;
+    height: 35px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    text-align: center;
+    line-height: 20px;
+}
+
+.editUserPage .col-sm-5 {
+    width: 38.6667%;
+}
+
+.editUserPage .light_blueBtn {
+    text-align: center;width: 120px;
+    height: 40px;
+    vertical-align: middle;
+}
+
+.editUserPage .col-sm-7 {
+    width: 56.3333%;
+}
+
+.deleteBox .btn-blackBorder {
+    border: 2px solid rgb(0, 0, 0);
+}
+
+.deleteBox .btn-blueBorder {
+    border: 3px solid rgb(55, 10, 217);
+}
+
+.deleteBox .modal-header .btn-close {
+    padding: 3px;
+}
+
+.deleteBox .btn {
+    width: 86px;
+    height: 32px;
+    padding: 0px;
+    border-radius: 11px;
+}
+
+.tableDesign tr:last-child .deleteBox .modal-body {
+    padding: 38px 8px 13px 26px;
+}
+
+.deleteBox .modal-header h6 {
+    margin-left: 20px;
+}
+
+input[type="file"] {
+    /* color: transparent; */
+}
+
+.table-striped>tbody>tr:nth-of-type(2n+1) {
+    background-color: rgb(255, 255, 255);
+    --bs-table-accent-bg: var(--bs-table-accent-bg);
+}
+
+.table-striped>tbody>tr:nth-of-type(2n) {
+    background-color: rgb(240, 240, 240);
+}
+
+.userList section h4 {
+    margin-left: 20px;
+}
+
+.userList  button{
+
+    border: none;
+    background-color: transparent;
+}
+
+.upload-list .table>tbody{
+    border-bottom: 2px solid #000;
+}

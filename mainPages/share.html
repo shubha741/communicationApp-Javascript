@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Communication Application</title>
+    <link rel="stylesheet" href="../Assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../Assets/css/mainPage.css">
+    <link rel="stylesheet" href="../Assets/css/main.css">
+    <script>
+        let code = localStorage.getItem("currentUser")
+        if (code == "login") {
+
+        }
+        else {
+
+            window.location.href = "../login.html"
+        }
+    </script>
+</head>
+
+<body onload="fetchFileDetails()()" >
+ 
+    <div class="container-fluid tableDesign share  ">
+        <section>
+            <ul class="nav nav-tabs navBar text-center">
+                <li class="nav-item ">
+                    <a class="nav-link " href="../mainPages/chats.html" aria-current="page">Group Chat</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../mainPages/user-list.html">Manage users</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="../mainPages/upload-list.html">Manage Documents</a>
+                </li>
+                <li class="nav-item" onclick="logOut()">
+                    <a class="nav-link" onclick="logOut()">Logout</a>
+                </li>
+            </ul>
+        </section>
+        <!-----My Upload-->
+        <section class="mt-4">
+            <p>
+                Upload Sharing : <span id="SharedFileName"> </span>
+            </p>
+            <div class="mt-4 text-center">
+                <table class=" table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Shared User</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                Anne Hunter
+                            </td>
+                            <td>
+                                <a data-bs-toggle="modal" data-bs-target="#deleteModal">Remove</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Text User
+                            </td>
+                            <td>
+                                <a data-bs-toggle="modal" data-bs-target="#deleteModal">Remove</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                &nbsp;
+                            </td>
+                            <td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                &nbsp;
+                            </td>
+                            <td>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <!----Shared Uploads------->
+        <section class="mt-4 ">
+            <h4> Add Sharing</h4>
+            <div class="mt-4 addShare row">
+                <div class="col-md-6">
+                    <label>Choose User :</label>
+                    <select id="selectUser">
+                        <option>Choose User</option>
+                    </select>
+                </div>
+                <div class="col-md-6">
+                    <div> <button class="btn greayBtn" id="addToUser()"> Add
+                            Share</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!----Deletion Modal ------->
+        <section>
+            <div class="modal fade  " id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel"
+                aria-hidden="true">
+                <div class=" modal-dialog deleteBox">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h6 class="modal-title" id="deleteModalLabel">Confirm From Web Page</h6>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div> <img src="../Assets/images/quesyion.png"></div>
+                            <div> Are you Sure ?</div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-blueBorder" data-bs-dismiss="modal"> ok</button>
+                            <button type="button" class="btn btn-blackBorder" data-bs-dismiss="modal">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="../Assets/js/jquery.min.js "></script>
+    <script src="../Assets/js/bootstrap.min.js "></script>
+    <script src="../Assets/js/popper.min.js"></script>
+    <script src="../Assets/js/share.js"></script>
+
+</body>
+
+</html>

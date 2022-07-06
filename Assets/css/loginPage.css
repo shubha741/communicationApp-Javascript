@@ -1,0 +1,32 @@
+.formPage form {
+    text-align: right;
+}
+
+.formPage label {
+    font-weight: 700;
+}
+
+.formPage input {
+    border: 2px solid #000;
+    outline: none;
+    font-weight: 700;
+    color: #000;
+}
+
+.registerPage>.col-form-label {
+    font-weight: 600;
+}
+
+.registerSucceFull {
+    text-align: center;
+}
+
+.registerHeader {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.registerSucceFull a {
+    color: #0000ff;
+}

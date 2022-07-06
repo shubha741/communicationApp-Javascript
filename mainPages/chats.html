@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Communication Application</title>
+    <script>
+        let code = localStorage.getItem("currentUser")
+        if (code == "login") {
+
+        }
+        else {
+
+            window.location.href = "../login.html"
+        }
+    </script>
+    <link rel="stylesheet" href="../Assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../Assets/css/mainPage.css">
+    <link rel="stylesheet" href="../Assets/css/main.css">
+  
+</head>
+
+<body onload="chatPageHandler()">
+
+    <div class="container-fluid chatPage "  >
+        <section>
+            <ul class="nav nav-tabs navBar text-center">
+                <li class="nav-item active" onclick="chatPageHandler()">
+                    <a class="nav-link " href="../mainPages/chats.html" aria-current="page">Group Chat</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../mainPages/user-list.html">Manage users</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../mainPages/upload-list.html">Manage Documents</a>
+                </li>
+                <li class="nav-item" onclick="logOut()">
+                    <a class="nav-link" onclick="logOut()">Logout</a>
+                </li>
+            </ul>
+        </section>
+
+        <section class="mt-4">
+
+            <div class="text-center">Group Chat</div>
+            <div class="chatCloseBtn">
+                <button class="btn-close"></button>
+            </div>
+
+        </section>
+        <section class="mt-4 chatBody">
+
+            <table>
+                <tbody id="tableChat">
+                </tbody>
+            </table>
+
+
+        </section>
+        <section class="mt-4 chatFooter">
+            <div class="row mt-2 mb-1">
+                <div class="col-md-2 ">
+                    <p id="displayName"> </p>
+                </div>
+                <div class="col-md-7">
+                    <input type="text" id="typingBox" placeholder="Message" />
+                </div>
+                <div class="col-md-2 grpBtn"><button class="btn whiteBtn" onclick="chatTypingHandler()">Send</button>
+                    <button class="btn whiteBtn  " onclick="refreshChatHandler()">Refresh</button>
+                </div>
+
+            </div>
+        </section>
+    </div>
+
+
+
+    <script src="../Assets/js/jquery.min.js "></script>
+    <script src="../Assets/js/bootstrap.min.js "></script>
+    <script src="../Assets/js/popper.min.js"></script>
+    <script src="../Assets/js/custom.js"></script>
+
+
+</body>
+
+</html>
